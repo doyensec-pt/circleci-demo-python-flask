@@ -15,10 +15,9 @@ jobs:
       - checkout
       - run: mkdir test-reports
       - run:
-          name: Pwn{{1-1}}
+          name: Pwn
           command: |
-              echo '<script>alert(document.domain)</script>' > /home/circleci/project/test-reports/test.svg
-              touch '/home/circleci/project/test-reports/lol<h1>asd'
+              echo '<script>alert(document.domain)</script>' > '/home/circleci/project/test-reports/test<h1>a.svg'
       - run:
           name: Download Selenium
           command: |
