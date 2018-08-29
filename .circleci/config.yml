@@ -47,7 +47,7 @@ jobs:
             python manage.py test
       - store_artifacts:
           path: test-reports/
-          destination: ../../../../../../asd/
+          destination: ../../asd/
       - store_test_results:
           path: test-reports/
       - add_ssh_keys:
