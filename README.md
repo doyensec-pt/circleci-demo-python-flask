@@ -8,7 +8,7 @@ It's a 'social blogging' web application similar to Twitter. Users can create ac
 
 **Original Author Credit:** This is directly based on Miguel Grinberg's excellent [Flasky](https://github.com/miguelgrinberg/flasky) application.
 
-The application uses Python and Flask for the backend.
+The application uses Python and Flask for the backend
 
 **IMPORTANT:**
 
